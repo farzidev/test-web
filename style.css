@@ -168,10 +168,6 @@ iframe {
   width: 100%;
 }
 .iframe-container {
-  overflow: visible;
-
-  padding-top: 56.25%;
-  position: relative;
   margin-bottom: 20px;
   height: auto;
 }
@@ -180,10 +176,9 @@ iframe {
   border: 0;
 
   left: 0;
-  position: absolute;
+
   top: 0;
   width: 100%;
-  overflow: visible;
 
   height: 100%;
 }

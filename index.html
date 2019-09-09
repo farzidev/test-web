@@ -13,7 +13,7 @@
     </main>
     <div class="iframe-container">
       <iframe
-        src="https://mgr-client.herokuapp.com/weekly"
+        src="https://"
         frameborder="0"
         scrolling="auto"
         id="iframe"
@@ -23,6 +23,11 @@
     <footer>
       Contact info: 123-456-7890
     </footer>
-    <script></script>
+    <script>
+      var iframy = document.getElementById('iframe');
+      window.addEventListener('message', msg => {
+        iframy.style.height = (JSON.parse(msg.data).h || 500) + 20 + 'px';
+      });
+    </script>
   </body>
 </html>
